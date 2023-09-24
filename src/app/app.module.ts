@@ -6,18 +6,17 @@ import { CardComponent } from './components/card/card.component';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { RouterModule } from '@angular/router';
+import { APP_ROUTES } from './app.routes';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     ComponentDocumentationComponent,
-    ToolbarComponent
+    ToolbarComponent,
   ],
-  imports: [
-    BrowserModule, RouterModule.forRoot([])
-  ],
+  imports: [BrowserModule, RouterModule.forRoot(APP_ROUTES, {})],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
