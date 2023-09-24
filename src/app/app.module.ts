@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     ToolbarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, RouterModule.forRoot([])
   ],
   providers: [],
   bootstrap: [AppComponent]
