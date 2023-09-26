@@ -4,7 +4,8 @@
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr auto;
-  // align-items: center;
+  align-items: center;
+  text-align: center;
   padding: 10px;
   background-color: $blue;
   color: white;
@@ -17,13 +18,14 @@
 }
 
 :host ::ng-deep {
-  ul {
-    display: grid;
-    grid-gap: 10px;
-    grid-auto-flow: column;
+  
+  // ul {
+  //   display: grid;
+  //   grid-gap: 10px;
+  //   grid-auto-flow: column;
 
-    li {
-      display: inline;
-    }
-  }
+  //   li {
+  //     display: inline;
+  //   }
+  // }
 }
